@@ -28,8 +28,12 @@ public class LED_activity extends AppCompatActivity {
             public void onClick(View v) {
                 if (switchCompat.isChecked()) {
                     imageView.setImageDrawable(getResources().getDrawable(R.drawable.light_on));
+//                    Ibutang sa first method an gusto mo mangyari na action
+                    method1();
                 } else {
-                    imageView.setImageDrawable(getResources().getDrawable(R.drawable.light_off));
+                    //                    Ibutang sa second method an gusto mo mangyari na actionimageView.setImageDrawable(getResources().getDrawable(R.drawable.light_off));
+
+                    method2();
                 }
             }
         });
@@ -75,5 +79,15 @@ public class LED_activity extends AppCompatActivity {
 
             }
         });
+    }
+
+    void method1() {
+//        Halimbawa mag on relay number 1
+        System.out.println("Running First Option");
+    }
+
+    void method2() {
+        //        Halimbawa mag on relay number 2
+        System.out.println("Running Second Option");
     }
 }
